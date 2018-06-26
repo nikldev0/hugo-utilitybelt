@@ -1,0 +1,32 @@
+<form class="contact-form" name="contact" method="POST" netlify-honeypot="bot-field"  netlify>
+     <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </p>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="text" class="form-control" name="email" id="email" required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" class="form-control" name="message" required></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i> Send message</button>
+        </div>
+    </div>
+</form>
