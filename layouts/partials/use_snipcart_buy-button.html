@@ -10,11 +10,7 @@
     {{ with .Params.image }}
     data-item-image="{{ $.Site.Params.cloudinary_base_url }}/w_50,h_50,c_fill,g_auto{{ . }}"
     {{ end }}
-    {{ with .Params.customOptions }}
-        {{- range $index, $option := . -}}
-        {{ safeHTMLAttr (partial (printf "custom-options/%s" .template) (dict "Index" (add 1 $index) "Option" $option)) }}
-        {{- end -}}
-    {{ end }}
+
 >
 Buy {{ .Title }}
 </button>
