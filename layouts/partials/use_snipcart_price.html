@@ -1,0 +1,5 @@
+{{ if eq .currency "USD" }}
+${{ .price }}
+{{ else }}
+{{ .currency }} {{ .price }}
+{{ end }}

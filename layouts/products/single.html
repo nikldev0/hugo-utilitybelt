@@ -1,0 +1,28 @@
+{{ define "main"}}
+
+<div class="product columns">
+    {{ with .Params.image }}
+    <div class="product__image column is-half">
+            {{ partial "use_snipcart_images/single-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+    </div>
+    {{ end }}
+    <div class="product__essential column is-half">
+        <h1 class="title product__title">{{ .Title }}</h1>
+        {{ with .Params.shortDescription }}
+        <div class="subtitle product__shortDescription">{{ . }}</div>
+        {{ end }}
+        <div class="product__actions">
+            <span class="product__price">{{ partial "use_snipcart_price" (dict "price" .Params.price "currency" .Site.Params.currency)}}</span>
+            {{ partial "use_snipcart_buy-button" . }}
+        </div>
+    </div>
+</div>
+<div class="product__description content">
+    {{ .Content }}
+
+    <div class="buy-button">
+        {{ partial "use_snipcart_buy-button" . }}
+    </div>
+</div>
+
+{{ end }}

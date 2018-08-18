@@ -8,4 +8,7 @@ A theme consisting of partials that can be added as a theme component for any Hu
 - `use_staticman.html` is a partial for providing comments
     + You will need to include in `params` `staticman_url` which contains the POST `url` e.g. https://api.staticman.net/v2/entry/eduardoboucas/staticman/gh-pages/comments and `staticman_debug`
 - `use_hugo-search-index.html` is a basic partial for producing a search box and returning result if you've implemented the `hugo-search-index` project
-    + This doesn't do any seach index generation etc
+    + This doesn't do any of the search index generation etc
+- `use_snipcart_*` partials help you implement snipcart
+    + See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
+    + Add to `params`: `snipcart_test_api_key` and `snipcart_live_api_key`

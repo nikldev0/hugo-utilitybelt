@@ -1,0 +1,17 @@
+{{ with .Params.image }}
+<div class="product__image">
+    {{ partial "use_snipcart_images/list-product" (dict "image" . "baseURL" $.Site.Params.cloudinary_base_url) }}
+</div>
+{{ else }}
+<!-- placeholder image -->
+{{ end }}
+<div class="product__actions columns">
+<h3 class="title is-4 column is-one-half">
+    {{ .Title }}
+    <div class="product__price subtitle is-4">{{ partial "use_snipcart_price" (dict "price" .Params.price "currency" .Site.Params.currency)}}</div>
+</h3>
+<div class="product__links column is-one-half">
+    <a class="button is-primary" href="{{ .Permalink }}">View Details</a>
+    {{ partial "use_snipcart_buy-button" . }}
+</div>
+</div>
