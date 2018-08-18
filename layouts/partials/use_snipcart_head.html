@@ -1,5 +1,10 @@
-<!-- snipcart assets -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- snipcart assets -->
+    {{- if or (and (eq (getenv "HUGO_ENV") "development") (not .Site.Params.snipcart_test_api_key)) (and (ne (getenv "HUGO_ENV") "development") (not .Site.Params.snipcart_live_api_key)) -}}
+    <script>
+      console.warn("No Snipcart API key found. Please set up your API key(s) in config.toml.");
+    </script>
+    {{- end -}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="
   {{- if eq (getenv "HUGO_ENV") "development" -}}
   {{ .Site.Params.snipcart_test_api_key }}
@@ -7,4 +12,4 @@
   {{ .Site.Params.snipcart_live_api_key }}
   {{- end -}}
 "></script>
-<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
