@@ -3,5 +3,9 @@ A theme consisting of partials that can be added as a theme component for any Hu
 
 - `use-bootstrap4.html` is partial containing the CSS, javascript, and meta tags ideal for including bootstrap 4 (4.1.1 currently) in the `<head/>` tag of your site. This uses `async` loading of the scripts.
 - `use_fontawesome5.html` is a partial for incorporating fontawesome 5 (5.1.0 currently) into your site.
-- `use_fontawesome5pro.html` is a partial for incorporating fontawesome 5 (5.1.0 currently) Pro into your site. Note this won't work unless you've whitelisted your site with fontawesome.
-- `use_staticman.html` is a partial for providing comments. You will need to include in `params` `staticman_url` which contains the POST `url` e.g. https://api.staticman.net/v2/entry/eduardoboucas/staticman/gh-pages/comments and `staticman_debug`
+- `use_fontawesome5pro.html` is a partial for incorporating fontawesome 5 (5.1.0 currently) Pro into your site.
+    + Note this won't work unless you've whitelisted your site with fontawesome.
+- `use_staticman.html` is a partial for providing comments
+    + You will need to include in `params` `staticman_url` which contains the POST `url` e.g. https://api.staticman.net/v2/entry/eduardoboucas/staticman/gh-pages/comments and `staticman_debug`
+- `use_hugo-search-index.html` is a basic partial for producing a search box and returning result if you've implemented the `hugo-search-index` project
+    + This doesn't do any seach index generation etc
