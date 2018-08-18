@@ -13,4 +13,4 @@ A theme consisting of partials that can be added as a theme component for any Hu
 - `use_snipcart_*` partials help you implement snipcart
     + See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
     + Add to `params`: `snipcart_test_api_key` and `snipcart_live_api_key`
-    + The `products` layout items have also been included
+- `use_fullcontentrss.xml` is a partial for returning all the content in an RSS feed
