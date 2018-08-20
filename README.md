@@ -1,6 +1,13 @@
 # hugo-utilitybelt
-A theme consisting of partials that can be added as a theme component for any Hugo site
+A theme consisting of partials that can be added as a theme component for any Hugo site. This leverages the *theme composition* functionality added in Hugo v0.42.
 
+## Usage
+1. Add the `hugo-utilitybelt` as a submodule to be able to get upstream changes later `git submodule add https://github.com/lockedatapublished/hugo-utilitybelt.git themes/hugo-utilitybelt`
+2. Add `hugo-utilitybelt` as a theme in your config.toml `theme = ["hugo-itsalocke", "hugo-utilitybelt"]`
+3. In your custom theme or site, reference utilitybelt partials in the normal way
+
+
+## Core contents
 - `use-bootstrap4.html` is partial containing the CSS, javascript, and meta tags ideal for including bootstrap 4 (4.1.1 currently) in the `<head/>` tag of your site. This uses `async` loading of the scripts.
 - `use_jquery3.html` is a partial calling the minified full jquery 3.3.1 from the CDN. This uses `async` loading of the scripts.
 - `use_fontawesome5.html` is a partial for incorporating fontawesome 5 (5.1.0 currently) into your site.
@@ -14,3 +21,16 @@ A theme consisting of partials that can be added as a theme component for any Hu
     + See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
     + Add to `params`: `snipcart_test_api_key` and `snipcart_live_api_key`
 - `use_fullcontentrss.xml` is a partial for returning all the content in an RSS feed
+
+
+## Staticman
+Here are the instructions for using the staticman comments system in your theme / site.
+
+1. Add `hugo-utilitybelt` to your list of themes in `config.toml` e.g. `theme= ["hugo-utiliybelt","hugo-itsalocke"]`
+2. Per the [staticman docs](https://staticman.net/docs/) add staticman to your Hugo github repo as a collaborator 
+    + This enables staticman to contribute pull requests, you can alternatively create youre own hosted version of staticman if you don't want to use an external dependency
+3. Add a `staticman.yml` file to your site
+    + Use the [samples](https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml), consult the [docs](https://staticman.net/docs/configuration), or [lift one I made earlier](https://github.com/lockedatapublished/itsalockev2/blob/master/staticman.yml).
+4. Add style functionality to your theme / site by using `use_staticman_head.html` in your `<head></head>  ` e.g. `{{ partial "use_staticman_head.html" . }}`
+5. Customise comments CSS by adding a CSS file at `static/css/comments.css`
+6. Include the `use_staticman.html` partial in your layouts that you wish to have comments available on
