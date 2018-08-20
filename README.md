@@ -28,7 +28,7 @@ Here are the instructions for using the staticman comments system in your theme 
 
 1. Add `hugo-utilitybelt` to your list of themes in `config.toml` e.g. `theme= ["hugo-utiliybelt","hugo-itsalocke"]`
 2. Per the [staticman docs](https://staticman.net/docs/) add staticman to your Hugo github repo as a collaborator 
-    + This enables staticman to contribute pull requests, you can alternatively create youre own hosted version of staticman if you don't want to use an external dependency
+    + This enables staticman to contribute pull requests, you can alternatively create your own hosted version of staticman if you don't want to use an external dependency
 3. Add a `staticman.yml` file to your site
     + Use the [samples](https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml), consult the [docs](https://staticman.net/docs/configuration), or [lift one I made earlier](https://github.com/lockedatapublished/itsalockev2/blob/master/staticman.yml).
 4. Add style functionality to your theme / site by using `use_staticman_head.html` in your `<head></head>  ` e.g. `{{ partial "use_staticman_head.html" . }}`
