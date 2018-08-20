@@ -1,0 +1,1 @@
+The staticman comments.css file is taken from https://github.com/arapaima-uk/source.arapaima-uk.github.io
