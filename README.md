@@ -34,3 +34,7 @@ Here are the instructions for using the staticman comments system in your theme 
 4. Add style functionality to your theme / site by using `use_staticman_head.html` in your `<head></head>  ` e.g. `{{ partial "use_staticman_head.html" . }}`
 5. Customise comments CSS by adding a CSS file at `static/css/comments.css`
 6. Include the `use_staticman.html` partial in your layouts that you wish to have comments available on
+
+Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md). 
+
+ Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project project you agree to abide by its terms.
