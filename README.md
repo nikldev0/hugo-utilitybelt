@@ -1,6 +1,10 @@
 # hugo-utilitybelt
 A theme consisting of partials that can be added as a theme component for any Hugo site. This leverages the *theme composition* functionality added in Hugo v0.42.
 
+Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md). 
+
+lease note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project project you agree to abide by its terms.
+
 ## Usage
 1. Add the `hugo-utilitybelt` as a submodule to be able to get upstream changes later `git submodule add https://github.com/lockedatapublished/hugo-utilitybelt.git themes/hugo-utilitybelt`
 2. Add `hugo-utilitybelt` as a theme in your config.toml `theme = ["hugo-itsalocke", "hugo-utilitybelt"]`
@@ -35,6 +39,5 @@ Here are the instructions for using the staticman comments system in your theme 
 5. Customise comments CSS by adding a CSS file at `static/css/comments.css`
 6. Include the `use_staticman.html` partial in your layouts that you wish to have comments available on
 
-Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md). 
-
- Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project project you agree to abide by its terms.
+## Snipcart
+See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
