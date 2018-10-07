@@ -3,7 +3,7 @@ A theme consisting of partials that can be added as a theme component for any Hu
 
 Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md). 
 
-lease note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project project you agree to abide by its terms.
 
 ## Usage
 1. Add the `hugo-utilitybelt` as a submodule to be able to get upstream changes later `git submodule add https://github.com/lockedatapublished/hugo-utilitybelt.git themes/hugo-utilitybelt`
