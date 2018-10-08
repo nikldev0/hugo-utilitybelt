@@ -1,5 +1,5 @@
 # hugo-utilitybelt
-A theme consisting of partials that can be added as a theme component for any Hugo site. This leverages the *theme composition* functionality added in Hugo v0.42.
+A theme consisting of partials and shortcodes that can be added as a theme component for any Hugo site. This leverages the *theme composition* functionality added in Hugo v0.42.
 
 Wanna report a bug or suggest a feature? Great stuff! For more information on how to contribute check out [our contributing guide](.github/CONTRIBUTING.md). 
 
