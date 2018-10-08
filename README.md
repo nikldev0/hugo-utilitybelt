@@ -41,3 +41,12 @@ Here are the instructions for using the staticman comments system in your theme 
 
 ## Snipcart
 See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
+
+# Eventbrite
+The Eventbrite shortcode allows you to embed the ticket sales page into your hugo site using the event id.
+
+At present, only the ticket page is supported, however support for the button is on the way.
+
+1. Add `hugo-utilitybelt` to your list of themes in `config.toml` e.g. `theme= ["hugo-utiliybelt","hugo-itsalocke"]`
+2. Insert the shortcode into the page you want to sell the tickets from and set the event id e.g `{{< eventbrite event_id="0123456789" >}}`
+3. Publish your page, the Eventbrite details should be listed and people can order directly from your website
