@@ -50,3 +50,10 @@ At present, only the ticket page is supported, however support for the button is
 1. Add `hugo-utilitybelt` to your list of themes in `config.toml` e.g. `theme= ["hugo-utiliybelt","hugo-itsalocke"]`
 2. Insert the shortcode into the page you want to sell the tickets from and set the event id e.g `{{< eventbrite event_id="0123456789" >}}`
 3. Publish your page, the Eventbrite details should be listed and people can order directly from your website
+
+## Shortcodes Directory
+You can check out our Shortcodes Directories:
+1. To add Eventbrite shortcode for embedded ticket sales https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/eventbrite.html
+2. For a fullcalendar shortcode https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/fullcalendar_gcal.html
+3. For a Netlify contact form https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/netlify_basiccontact.html
+4. To view simple sitemap https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/sitemap.html
