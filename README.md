@@ -53,7 +53,7 @@ At present, only the ticket page is supported, however support for the button is
 
 ## Shortcodes Directory
 You can check out our Shortcodes Directories:
-1. To add Eventbrite shortcode for embedded ticket sales https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/eventbrite.html
+1. To add Eventbrite shortcode for embedded ticket sales see [eventbrite.html](./layouts/shortcodes/eventbrite.html)
 2. For a fullcalendar shortcode https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/fullcalendar_gcal.html
 3. For a Netlify contact form https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/netlify_basiccontact.html
 4. To view simple sitemap https://github.com/lockedatapublished/hugo-utilitybelt/blob/master/layouts/shortcodes/sitemap.html
