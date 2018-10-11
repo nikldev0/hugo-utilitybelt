@@ -1,5 +1,7 @@
 {{ if eq .currency "USD" }}
 ${{ .price }}
+{{ else if eq .currency "GBP" }}
+£{{ .price }}
 {{ else }}
 {{ .currency }} {{ .price }}
 {{ end }}
