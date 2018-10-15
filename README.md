@@ -8,7 +8,7 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ## Usage
 1. Add the `hugo-utilitybelt` as a submodule to be able to get upstream changes later `git submodule add https://github.com/lockedatapublished/hugo-utilitybelt.git themes/hugo-utilitybelt`
 2. Add `hugo-utilitybelt` as a theme in your config.toml `theme = ["hugo-itsalocke", "hugo-utilitybelt"]`
-3. In your custom theme or site, reference utilitybelt partials in the normal way
+3. In your custom theme or site, reference utilitybelt partials in the normal way.
 
 
 ## Core contents
@@ -38,7 +38,7 @@ Here are the instructions for using the staticman comments system in your theme 
     + Use the [samples](https://github.com/eduardoboucas/staticman/blob/master/staticman.sample.yml), consult the [docs](https://staticman.net/docs/configuration), or [lift one I made earlier](https://github.com/lockedatapublished/itsalockev2/blob/master/staticman.yml).
 4. Add style functionality to your theme / site by using `use_staticman_head.html` in your `<head></head>  ` e.g. `{{ partial "use_staticman_head.html" . }}`
 5. Customise comments CSS by adding a CSS file at `static/css/comments.css`
-6. Include the `use_staticman.html` partial in your layouts that you wish to have comments available on
+6. Include the `use_staticman.html` partial in your layouts that you wish to have comments available on.
 
 ## Snipcart
 See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
@@ -50,4 +50,4 @@ At present, only the ticket page is supported, however support for the button is
 
 1. Add `hugo-utilitybelt` to your list of themes in `config.toml` e.g. `theme= ["hugo-utiliybelt","hugo-itsalocke"]`
 2. Insert the shortcode into the page you want to sell the tickets from and set the event id e.g `{{< eventbrite event_id="0123456789" >}}`
-3. Publish your page, the Eventbrite details should be listed and people can order directly from your website
+3. Publish your page, the Eventbrite details should be listed and people can order directly from your website.
