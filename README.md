@@ -27,6 +27,13 @@ Please note that this project is released with a [Contributor Code of Conduct](C
     + See original article at <https://forestry.io/blog/snipcart-brings-ecommerce-static-site/>
     + Add to `params`: `snipcart_test_api_key` and `snipcart_live_api_key`
 
+## Shortcodes content
+| Shortcode | Description |
+| --- | --- |
+| [`eventbrite.html`](layouts/shortcodes/eventbrite.html)| The Eventbrite shortcode allows you to embed the ticket sales page into your hugo site using the event id.|
+| [`fullcalendar_gcal.html`](layouts/shortcodes/fullcalendar_gcal.html)| The Fullcalendar shortcode allows you to embed google calendar page into your hugo site using google calendar API key.|
+| [`netlify_basiccontact.html`](layouts/shortcodes/netlify_basiccontact.html)| The Netlify shortcode allows you to embed basic contact form into your hugo site.|
+| [`sitemap.html`](layouts/shortcodes/sitemap.html)| The Sitemap shortcode allows you to embed simple sitemap into your hugo site.|
 
 ## Staticman
 Here are the instructions for using the staticman comments system in your theme / site.
